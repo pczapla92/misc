@@ -2,8 +2,14 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias d="cd ~/Downloads"
 
 alias g="git"
+alias kl="kubectl"
+alias watch="watch -t"
+alias dcu="docker-compose up -d"
+alias dcd="docker-compose down"
+alias dp="docker ps"
 
 function 2ogg() { eyeD3 --remove-all-images "$1"; fname="${1%.*}"; sox "$1" "$fname.ogg" && rm "$1"; }
 function 2wav() { fname="${1%.*}"; ffmpeg -threads 0 -i "$1" "$fname.wav" && rm "$1"; }
