@@ -6,7 +6,7 @@ filetype indent on
 
 syntax on
 
-set number
+set number relativenumber
 set cursorline
 
 set shiftwidth=4
