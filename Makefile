@@ -8,7 +8,7 @@ DEFINES :=
 SRCS := $(shell find $(SRC_DIR) -name '*.cpp')
 OBJS := $(SRCS:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)
 
-CPPFLAGS := $(I_FLAGS) -Wall -g $(DEFINES)
+CPPFLAGS := -Wall -g $(DEFINES)
 
 $(info $(shell mkdir -p $(BUILD_DIR)))
 
