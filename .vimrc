@@ -30,3 +30,7 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 nnoremap <C-a> ggVG
 nnoremap <CR> o<ESC>
+
+let &t_SI = "\e[5 q"
+let &t_EI = "\e[2 q"
+
