@@ -1,5 +1,12 @@
 set nocompatible
+set nobackup
 nnoremap Q <Nop>
+
+let &t_SI = "\e[5 q"
+let &t_EI = "\e[2 q"
+let &t_SR.= "\e[4 q"
+
+colorscheme wildcharm
 
 filetype on
 filetype plugin on
@@ -14,9 +21,6 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 
-set nobackup
-set nowrap
-
 set incsearch
 set showmatch
 set hlsearch
@@ -25,15 +29,6 @@ set showcmd
 set showmode
 
 set history=1000
-set wildmenu
-set wildmode=list:longest
-set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
-
-let &t_SI = "\e[5 q"
-let &t_EI = "\e[2 q"
-let &t_SR.= "\e[4 q"
-
-colorscheme wildcharm
 
 set nobackup
 set showcmd
@@ -44,7 +39,6 @@ set history=1000
 
 " display file matches after tab completion
 set wildmenu
-set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 " recursive file search
 set path+=**
