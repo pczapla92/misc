@@ -1,7 +1,9 @@
 set nocompatible
 set nobackup
+" disable ex mode
 nnoremap Q <Nop>
 
+" cursor visuals
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[2 q"
 let &t_SR.= "\e[4 q"
@@ -20,10 +22,6 @@ set cursorline
 set shiftwidth=4
 set tabstop=4
 set expandtab
-
-set incsearch
-set showmatch
-set hlsearch
 
 set showcmd
 set showmode
@@ -51,7 +49,7 @@ set number relativenumber
 " cursor mode
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[2 q"
-let &t_SR.= "\e[4 q"
+let &t_SR = "\e[4 q"
 
 filetype on
 filetype plugin on
@@ -72,20 +70,26 @@ set incsearch
 set showmatch
 set hlsearch
 
+" keymap
+nnoremap <space> :
+let mapleader = ","
+
+vnoremap <leader>d "_d
+vnoremap <leader>c "+y
+
 nnoremap <C-a> ggVG
 nnoremap <CR> o<ESC>k
-nnoremap <space> :
 
 " navigate the split view CTRL+j, CTRL+k, CTRL+h, or CTRL+l
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 " resize split windows using arrow keys by pressing CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT
-noremap <c-up> <c-w>+
-noremap <c-down> <c-w>-
-noremap <c-left> <c-w>>
-noremap <c-right> <c-w><
+noremap <C-up> <C-w>+
+noremap <C-down> <C-w>-
+noremap <C-left> <C-w>>
+noremap <C-right> <C-w><
 
 " java test (public) method
 nnoremap ,jtest i@Test<ESC>>>ovoid X() {<ESC>>>o// given<ESC>>>>>o<CR>// when<ESC>>>>>o<CR>// then<ESC>>>>>o<CR>}<ESC>>>7k_fXciw
