@@ -74,10 +74,14 @@ set hlsearch
 nnoremap <space> :
 let mapleader = ","
 
+" purge
 vnoremap <leader>d "_d
-vnoremap <leader>c "+y
+" copy to clipboard
+vnoremap <leader>y "+y
 
+" select all
 nnoremap <C-a> ggVG
+" insert new line
 nnoremap <CR> o<ESC>k
 
 " navigate the split view CTRL+j, CTRL+k, CTRL+h, or CTRL+l
