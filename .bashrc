@@ -4,6 +4,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias d="cd ~/Downloads"
 alias p="cd ~/Documents/projects"
+alias t="cd /tmp/"
 
 alias g="git"
 alias kl="kubectl"
