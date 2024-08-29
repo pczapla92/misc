@@ -7,6 +7,7 @@ alias p="cd ~/Documents/projects"
 alias t="cd /tmp/"
 
 alias g="git"
+alias gp="git fetch -a -p && git pull"
 alias kl="kubectl"
 alias watch="watch -t"
 alias watch1="watch -t -n 1"
